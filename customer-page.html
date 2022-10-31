@@ -14,36 +14,40 @@
   </head>
   <body>
     <script src="jquery-3.6.0.min.js"></script>
-    <div class="columns is-flex columns-layout is-just">
-      <div class="column is-3 pl-6 pt-6 ml-5 mt-6">
-        <h3 class="is-size-3">Selamat datang di</h3>
-        <img src="/assets/logo-alt.png" alt="logo" width="300px" />
-        <div class="column">
-          <div class="card">
-            <div class="card-content">
-              <div class="content">
-                <div class="login-section align-items-center">
-                  <div>
-                    <label for="username">Username</label>
+    <div class="columns is-flex fullheight">
+      <div class="column is-4 is-flex is-align-content-center pl-6 ml-5">
+        <div class="wrapper">
+          <h3 class="is-size-3">Selamat datang di</h3>
+          <img src="/assets/logo-alt.png" alt="logo" width="300px" />
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <div class="wrapper content-layout">
+                    <div class="content-layout">
+                      <div>
+                        <label for="username">Username</label>
+                        <br />
+                        <input type="text" class="text-area" />
+                      </div>
+                      <div>
+                        <label for="password">Password</label>
+                        <br />
+                        <input type="text" class="text-area" />
+                      </div>
+                    </div>
                     <br />
-                    <input type="text" class="text-area" />
+                    <div class="login-btn">
+                      <button class="button">Log in</button>
+                    </div>
                   </div>
-                  <div>
-                    <label for="password">Password</label>
-                    <br />
-                    <input type="text" class="text-area" />
-                  </div>
-                </div>
-                <br />
-                <div>
-                  <button class="button">Log in</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="column">
+      <div class="column is-6 is-flex is-justify-content-center">
         <img src="/assets/customer-img.svg" alt="customer-img" width="750px" />
       </div>
     </div>

@@ -38,6 +38,8 @@
 }
 .card {
     background-color: rgb(247, 247, 247);
+    height: 300px !important;
+    width: 400px !important;
 }
 .text-area {
     width: 70%;
@@ -49,8 +51,18 @@
 .columns-layout {
     top:200px;
 }
-.display {
-    display: flex;
-    top: auto;
-    bottom: auto;
+.fullheight {
+    height: 100vh;
+}
+.wrapper {
+    height: fit-content;
+    margin: auto;
+}
+.content-layout {
+    margin-top: 30px;
+    margin-left:20px;
+    width: 100%;
+}
+.login-btn{
+    margin-left: 190px !important;
 }
