@@ -9,8 +9,6 @@
 .menu-container {
     position: relative;
     padding-top: 25px;
- 
-    z-index: 10;
     height: 100vh;
 }
 .menu-list li a {
@@ -37,4 +35,22 @@
 }
 .role-form {
     position: relative;
+}
+.card {
+    background-color: rgb(247, 247, 247);
+}
+.text-area {
+    width: 70%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    height: 30px !important;
+}
+.columns-layout {
+    top:200px;
+}
+.display {
+    display: flex;
+    top: auto;
+    bottom: auto;
 }
