@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dataTables.bulma.min.css" />
+  </head>
+  <body>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="dataTables.bulma.min.js"></script>
+    <script src="script.js"></script>
+    <div class="columns">
+      <div class="column is-2">
+        <!-- Sidebar -->
+        <div class="bg-custom menu-container px-1 pl-5 pr-5">
+          <div class="menu-wrapper">
+            <aside class="menu">
+              <a href="#" class="logo ml-4">
+                <img src="./assets/logo.png" width="150px" alt="" />
+              </a>
+              <ul class="menu-list">
+                <li>
+                  <a><i class="fas fa-thin fa-user mr-3"></i>User</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-thin fa-list mr-3"></i>Barang</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-thin fa-house mr-3"></i>Cabang</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-thin fa-cart-shopping mr-3"></i>Order</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-thin fa-truck-fast mr-3"></i>Ongkir</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+        <!-- Sidebar -->
+      </div>
+      <!-- Content -->
+      <div class="column is-10 mt-3 ">
+        <div
+          class="is-flex is-justify-content-space-between is-align-items-center"
+        >
+          <div class="list-container">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+              <h3 class="is-size-2">User</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">User</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button class="button mr-5 js-modal-trigger" data-target="modal-js-example">+ Add User</button>
+        </div>
+        <div class="is-flex is-justify-content-center">
+
+          <div class="card fullwidth">
+            <div class="card-content fullwidth">
+              <table class="table fullwidth">
+                <thead> 
+                  <tr>
+                    <th class="tab-user">USER</th>
+                    <th class="tab-role">ROLE</th>
+                    <th class="tab-joinDate">JOIN DATE</th>
+                    <th class="tab-action">ACTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Mister X</th>
+                    <th>Super Admin</th>
+                    <th>12/12/2022</th>
+                    <th>
+                      <select name="actions-select" id="user-action" form="userform">
+                        <option selected disabled hidden>Actions</option>
+                        <option value="edit">Edit</option>
+                        <option value="delete">Delete</option>
+                      </select>
+                    </th>
+                  </tr>
+                </tbody>
+              </div>
+            </div>
+          </div>
+        </div>
+            </table>
+          </div>
+          <!-- Content -->
+          <!-- Modal -->
+          <div id="modal-js-example" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <div class="box">
+                <h3 class="is-size-3">Input User</h3>
+                <div class="columns is-justify-content-center is-align-content-center is-text-centered">
+                  <div class=" column">
+                    <p>User</p>
+                    <input type="text" class="fullwidth">
+                  </div>
+                  <div class="column role-form">
+                    <p>Role</p>
+                    <select name="role-select" id="role-action" form="roleform" class="fullwidth">
+                      <option selected disabled hidden>Pilih role</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Super">Superadmin</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="column is-10"></div>
+                  <div class="column">
+                    <button class="button">Simpan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+          <!-- Modal -->
+  </body>
+</html>
