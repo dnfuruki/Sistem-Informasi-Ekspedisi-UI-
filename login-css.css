@@ -37,6 +37,9 @@
     position: relative;
 }
 .card {
+    background-color: rgb(240, 240, 240) !important;
+    height: 250px !important;
+    width: 450px !important;
     border-radius: 7px !important;
 }
 .text-area {
