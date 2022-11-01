@@ -14,7 +14,6 @@
     />
   </head>
   <body>
-    <script src="script.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <!-- Main -->
     <div class="wrapper">
@@ -31,7 +30,7 @@
         <div class="column is-flex cek-resi-positioning has-text-centered">
           <div class="wrapper">
             <div>
-              <h4 class="cek-resi is-size-4 pb-3">Cek resi</h4>
+              <h4 class="cek-resi is-size-4 pb-3">Masukan nomor resi disini</h4>
             </div>
             <div>
               <input type="text" class="cek-resi-input pt-3" />
@@ -51,13 +50,24 @@
     </div>
     <!-- Main -->
     <!-- Modal -->
-    <div class="modal">
+    <div id="modal-js-example" class="modal">
       <div class="modal-background"></div>
+
       <div class="modal-content">
-        <!-- Any other Bulma elements you want -->
+        <div class="box">
+          <ul>
+            <li>No. Resi :</li>
+            <li>Barang :</li>
+            <li>Pengirim :</li>
+            <li>Penerima :</li>
+            <li>Status :</li>
+          </ul>
+        </div>
       </div>
+
       <button class="modal-close is-large" aria-label="close"></button>
     </div>
     <!-- Modal -->
+    <script src="script.js"></script>
   </body>
 </html>
